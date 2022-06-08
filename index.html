@@ -6,29 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title></head
   ><link rel="stylesheet" href="style.css" />
+  <script src="/index.js"></script>
   <body>
     <div class="calculator">
-        <div id="output">1234</div>
-        <div class="button-container">
-        <button class="purple"> AC</button>
-        <button class="purple"> +/-</button>
-        <button class="purple"> %</button>
-        <button class="blue">÷</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button class="blue">X</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button class="blue">-</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button class="blue">+</button>
-        <button>0</button>
-        <button>. </button>
-        <button class="blue"> =</button>
-        </div>
+      <div id="output">0</div>
+      <div class="button-container">
+        <button onclick="buildSum('1')">1</button>
+        <button onclick="buildSum('2')">2</button>
+        <button onclick="buildSum('3')">3</button>
+        <button onclick="buildSum('4')">4</button>
+        <button onclick="buildSum('5')">5</button>
+        <button onclick="buildSum('6')">6</button>
+        <button onclick="buildSum('7')">7</button>
+        <button onclick="buildSum('8')">8</button>
+        <button onclick="buildSum('9')">9</button>
+        <button onclick="buildSum('+')">+</button>
+        <button onclick="buildSum('-')">-</button>
+        <button onclick="buildSum('*')">*</button>
+        <button onclick="buildSum('/')">/</button>
+        <button onclick="buildSum('.')">.</button>
+        <button Onclick="reset()">Clear</button>
+        <button onclick="buildSum('0')">0</button>
+        <button onclick="evaluate()">=</button>
+      </div>
+    </div>
   </body>
 </html>
