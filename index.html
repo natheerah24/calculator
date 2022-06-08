@@ -4,31 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title></head
+    <title>Calculator</title></head
   ><link rel="stylesheet" href="style.css" />
-  <script src="/index.js"></script>
+
   <body>
     <div class="calculator">
-      <div id="output">0</div>
+      <div id="output"></div>
       <div class="button-container">
-        <button onclick="buildSum('1')">1</button>
-        <button onclick="buildSum('2')">2</button>
-        <button onclick="buildSum('3')">3</button>
-        <button onclick="buildSum('4')">4</button>
-        <button onclick="buildSum('5')">5</button>
-        <button onclick="buildSum('6')">6</button>
-        <button onclick="buildSum('7')">7</button>
-        <button onclick="buildSum('8')">8</button>
-        <button onclick="buildSum('9')">9</button>
-        <button onclick="buildSum('+')">+</button>
-        <button onclick="buildSum('-')">-</button>
-        <button onclick="buildSum('*')">*</button>
-        <button onclick="buildSum('/')">/</button>
-        <button onclick="buildSum('.')">.</button>
-        <button Onclick="reset()">Clear</button>
-        <button onclick="buildSum('0')">0</button>
-        <button onclick="evaluate()">=</button>
+        <button class="greylight" Onclick="reset()">C</button>
+        <button class="greylight" onclick="buildSum('+/-')">+/-</button>
+        <button class="greylight" onclick="buildSum('%')">%</button>
+        <button class="orange" onclick="buildSum('/')">/</button>
+        <button class="grey" onclick="buildSum('7')">7</button>
+        <button class="grey" onclick="buildSum('8')">8</button>
+        <button class="grey" onclick="buildSum('9')">9</button>
+        <button class="orange" onclick="buildSum('*')">*</button>
+        <button class="grey" onclick="buildSum('4')">4</button>
+        <button class="grey" onclick="buildSum('5')">5</button>
+        <button class="grey" onclick="buildSum('6')">6</button>
+        <button class="orange" onclick="buildSum('-')">-</button>
+        <button class="grey" onclick="buildSum('1')">1</button>
+        <button class="grey" onclick="buildSum('2')">2</button>
+        <button class="grey" onclick="buildSum('3')">3</button>
+        <button class="orange" onclick="buildSum('+')">+</button>
+        <button onclick="buildSum('0')" class="zero">0</button>
+        <button class="grey" onclick="buildSum('.')">.</button>
+        <button class="orange" onclick="calculate()">=</button>
       </div>
     </div>
+    <script src="/index.js"></script>
   </body>
 </html>

@@ -1,11 +1,14 @@
 let sum = "";
 function buildSum(char) {
   sum += char;
+  // document.innerHTML = sum;
   document.getElementById("output").innerHTML = sum;
 }
-function evaluate() {
-  sum = eval(sum);
-}
 function reset() {
-  document.getElementById(`output`).innerHTML = "";
+  sum = "";
+  document.getElementById("output").innerHTML = sum;
+}
+function calculate() {
+  sum = eval(sum);
+  document.getElementById("output").innerHTML = sum;
 }
